@@ -3,10 +3,6 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
-  - name: meteor
-    init: curl https://install.meteor.com/?release=2.7.3 | sh
-    command: export PATH=$PATH:/home/gitpod/.meteor
-    
-  - before: nvm install 14.19.3 && nvm alias default 14.19.3
+  - before: nvm install 14.19.3 && nvm alias default 14.19.3 && curl https://install.meteor.com/?release=2.7.3 | sh && export PATH=$PATH:/home/gitpod/.meteor
     init: yarn && yarn build
     command: yarn dev
