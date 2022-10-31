@@ -5,4 +5,4 @@
 tasks:
   - before: nvm install 14.19.3 && nvm alias default 14.19.3 && curl https://install.meteor.com/?release=2.7.3 | sh && export PATH=$PATH:/home/gitpod/.meteor
     init: yarn && yarn build
-    command: yarn dev
+    command: uname -a
